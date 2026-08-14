@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --blue-900: #0b2545;
+        --blue-700: #13315c;
+        --blue-500: #1d5fbf;
+        --blue-400: #2f80ed;
+        --blue-100: #eaf2ff;
+        --white: #ffffff;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        min-height: 100dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        background: radial-gradient(
+          circle at top,
+          var(--blue-500),
+          var(--blue-900)
+        );
+        color: var(--white);
+        text-align: center;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 420px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        padding: 48px 32px;
+        backdrop-filter: blur(6px);
+      }
+
+      .icon {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        background: var(--blue-400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+      }
+
+      h1 {
+        font-size: clamp(28px, 6vw, 40px);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      p {
+        color: var(--blue-100);
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 14px 20px;
+        border-radius: 12px;
+        transition:
+          transform 0.15s ease,
+          opacity 0.15s ease;
+      }
+
+      a:active {
+        transform: scale(0.98);
+      }
+
+      .btn-primary {
+        background: var(--white);
+        color: var(--blue-700);
+      }
+
+      .btn-primary:hover {
+        opacity: 0.9;
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .notice {
+        margin: 20px 0 0;
+        font-size: 12px;
+        line-height: 1.5;
+        color: rgba(234, 242, 255, 0.75);
+      }
+
+      @media (min-width: 480px) {
+        .actions {
+          flex-direction: row;
+        }
+        a {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">👋</div>
+      <h1>Bem-vindo</h1>
+      <p>Entre na sua conta ou crie um cadastro para continuar.</p>
+      <div class="actions">
+        <a class="btn-primary" href="./pages/login/index.html">Login</a>
+        <a class="btn-secondary" href="./pages/register/index.html"
+          >Cadastrar</a
+        >
+      </div>
+      <p class="notice">
+        🔒 Este é um sistema de demonstração para fins de portfólio. Todos os
+        dados cadastrados são excluídos automaticamente após 24 horas
+      </p>
+    </div>
+  </body>
+</html>

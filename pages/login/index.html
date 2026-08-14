@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="container" id="cadastro">
+      <div class="saudacao__container">
+        <div class="saudacao">
+          <h1>Bem-vindo de volta</h1>
+          <p>Acesse sua conta e continue aproveitando todos os recursos</p>
+        </div>
+        <p class="text__direitos">@ 2025. Todos direitos reservados</p>
+      </div>
+      <div class="form__container">
+        <h1 class="form__title">Login</h1>
+        <p class="form__subtitle">Informe seus dados para acessar sua conta</p>
+
+        <form class="loginForm" id="loginForm">
+          <div class="inputs">
+            <label class="input__label" for="email">E-mail</label>
+            <input
+              class="input__field"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              inputmode="email"
+            />
+            <span class="forms__erro" id="erroEmail"></span>
+
+            <label class="input__label" for="senha">Senha</label>
+            <div class="password__container">
+              <input
+                class="input__field"
+                id="senha"
+                type="password"
+                name="senha"
+                placeholder="Digite sua senha"
+              />
+              <button type="button" id="toggleSenha">
+                <i id="senhaIcon" class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <span class="forms__erro" id="erroSenha"></span>
+            <a id="mula" class="terms__link">Esqueceu sua senha?</a>
+            <span class="forms__erro" id="erro"></span>
+          </div>
+
+          <button class="btn__submit" id="btnCadastrar" type="submit">
+            Entrar
+          </button>
+
+          <div class="social__divider">
+            <span>ou entre com</span>
+          </div>
+
+          <button class="btn__google" type="button">
+            <img
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              alt="Google"
+              class="google__icon"
+            />
+            Cadastrar com Google
+          </button>
+          <p style="margin-top: 10px">
+            Não tem uma conta?
+            <a class="terms__link" href="../../pages/register/index.html"
+              >Cadastre-se</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard-header">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Informações da sua conta</p>
+        </div>
+
+        <button id="sair" class="btn">Sair</button>
+      </header>
+
+      <section class="perfil">
+        <div class="perfil-topo">
+          <div class="avatar" id="avatar">?</div>
+
+          <div>
+            <h2 id="nomeUsuario">Carregando...</h2>
+
+            <p id="emailUsuario">Carregando...</p>
+          </div>
+        </div>
+
+        <div class="dados">
+          <div class="campo">
+            <span>ID do usuário</span>
+            <strong id="idUsuario"> Carregando... </strong>
+          </div>
+          <div class="campo">
+            <span>Nome completo</span>
+            <strong id="nome"> Carregando... </strong>
+          </div>
+
+          <div class="campo">
+            <span>E-mail</span>
+            <strong id="email"> Carregando... </strong>
+          </div>
+
+          <div class="campo">
+            <span>Celular</span>
+            <strong id="celular"> Carregando... </strong>
+          </div>
+        </div>
+      </section>
+      <div class="dashboard-excluir">
+        <p>Exclua sua conta permanentemente</p>
+        <button id="excluir" class="btn">Excluir</button>
+      </div>
+      <p id="mensagem" class="mensagem"></p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

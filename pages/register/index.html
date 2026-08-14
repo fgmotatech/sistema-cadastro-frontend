@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="container">
+   
+      <section class="saudacao__container">
+        <div class="saudacao">
+          <h1>Bem-vindo de volta</h1>
+
+          <p>Acesse sua conta e continue aproveitando todos os recursos</p>
+        </div>
+      </section>
+
+      <section class="form__container">
+        <form class="cadastro__form" id="cadastroForm">
+          <div class="inputs">
+            <label class="input__label" for="nomeCompleto">Nome Completo</label>
+            <input
+              class="input__field"
+              id="nomeCompleto"
+              type="text"
+              name="nomeCompleto"
+              placeholder="Digite seu nome completo"
+              maxlength="50"
+            />
+            <span class="forms__erro" id="erroNome"></span>
+            <label class="input__label" for="celular">Celular</label>
+            <input
+              class="input__field"
+              id="celular"
+              type="tel"
+              name="celular"
+              placeholder="(00) 00000-0000"
+              autocomplete="tel"
+              maxlength="50"
+            />
+            <span class="forms__erro" id="erroCelular"></span>
+
+            <label class="input__label" for="email">E-mail</label>
+            <input
+              class="input__field"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              inputmode="email"
+              maxlength="50"
+            />
+            <span class="forms__erro" id="erroEmail"></span>
+            <label class="input__label" for="senha">Senha</label>
+
+            <div class="password__container">
+              <input
+                class="input__field"
+                id="senha"
+                type="password"
+                name="senha"
+                placeholder="Digite sua senha"
+                maxlength="15"
+              />
+              <button type="button" id="toggleSenha">
+                <i id="senhaIcon" class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <span class="forms__erro" id="erroSenha"></span>
+
+            <label class="input__label" for="confirmSenha"
+              >Confirmar Senha</label
+            >
+            <div class="password__container">
+              <input
+                class="input__field"
+                id="confirmSenha"
+                type="password"
+                name="confirmSenha"
+                placeholder="Digite novamente sua senha"
+                maxlength="15"
+              />
+              <button type="button" id="toggleConfirmSenha">
+                <i id="confirmIcon" class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <span class="forms__erro" id="erroConfirmSenha"></span>
+          </div>
+          <div class="password__rules">
+            <p class="password__rule">* Mínimo 7 caracteres</p>
+            <p class="password__rule">* Mínimo 1 letra maiúscula</p>
+            <p class="password__rule">* Mínimo 1 número</p>
+            <p class="password__rule">* Mínimo 1 caractere especial</p>
+          </div>
+          <div class="terms__container">
+            <input class="terms__checkbox" id="termos" type="checkbox" />
+            <label class="terms__text" for="termos">
+              Ao cadastrar-se, você concorda com as nossas
+              <a
+                class="terms__link"
+                href="../politica-de-privacidade/index.html"
+              >
+                Políticas de Privacidade
+              </a>
+              e aceita receber comunicações deste site.
+            </label>
+          </div>
+          <span class="forms__erro" id="erroTermos"></span>
+          <button class="btn__submit" id="btnCadastrar" type="submit">
+            Cadastrar-se
+          </button>
+
+          <div class="social__divider">
+            <span>ou cadastre-se com</span>
+          </div>
+
+          <button class="btn__google" type="button">
+            <img
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              alt="Google"
+              class="google__icon"
+            />
+            Cadastrar com Google
+          </button>
+        </form>
+      </section>
+
+      <p class="text__direitos">@ 2025. Todos direitos reservados</p>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>
